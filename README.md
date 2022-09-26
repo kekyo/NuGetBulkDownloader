@@ -1,5 +1,7 @@
 # NuGetBulkDownloader
 
+[Download net461 binary](https://github.com/kekyo/NuGetBulkDownloader/releases/tag/0.1.0)
+
 ----
 
 ## What is this?
@@ -9,7 +11,7 @@ You can use for backup many nuget package purpose.
 
 ```bash
 C:\>NuGetBulkDownloader.exe https://example.com/nuget/v3/index.json
-NuGetBulkDownloader 0.0.1
+NuGetBulkDownloader 0.1.0
 Copyright (c) Kouji Matsui
 https://github.com/kekyo/NuGetBulkDownloader
 
@@ -32,7 +34,7 @@ You can change storing base path with a option below.
 
 ```bash
 C:\>NuGetBulkDownloader.exe
-NuGetBulkDownloader 0.0.1
+NuGetBulkDownloader 0.1.0
 Copyright (c) Kouji Matsui
 https://github.com/kekyo/NuGetBulkDownloader
 
