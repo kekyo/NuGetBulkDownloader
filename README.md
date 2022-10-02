@@ -1,6 +1,6 @@
 # NuGetBulkDownloader
 
-[Download net461 binary](https://github.com/kekyo/NuGetBulkDownloader/releases/tag/0.1.0)
+[Download net461 binary](https://github.com/kekyo/NuGetBulkDownloader/releases)
 
 ----
 
@@ -10,8 +10,8 @@ Useful should to download all nuget packages from a nuget repository.
 You can use for backup many nuget package purpose.
 
 ```bash
-C:\>NuGetBulkDownloader.exe https://example.com/nuget/v3/index.json
-NuGetBulkDownloader 0.1.0
+$ nugetbd https://example.com/nuget/v3/index.json
+NuGetBulkDownloader 0.2.0
 Copyright (c) Kouji Matsui
 https://github.com/kekyo/NuGetBulkDownloader
 
@@ -32,19 +32,35 @@ You can change storing base path with a option below.
 
 ## Usage
 
+Install via nuget-cli for:
+
 ```bash
-C:\>NuGetBulkDownloader.exe
-NuGetBulkDownloader 0.1.0
+$ dotnet install -g NuGetBulkDownloader
+```
+
+Or download [built binary (net461) directly from here](https://github.com/kekyo/NuGetBulkDownloader/releases). 
+
+Then:
+
+```bash
+$ nugetbd
+NuGetBulkDownloader 0.2.0
 Copyright (c) Kouji Matsui
 https://github.com/kekyo/NuGetBulkDownloader
 
-usage: NuGetBulkDownloader [options] <nuget endpoint url>
+usage: nugetbd [options] <nuget endpoint url>
   -i                         Include prerelease packages
   -p                         Perform parallel download
       --basePath=VALUE       Store packages into this directory
       --userName=VALUE       Basic authentication user name
       --password=VALUE       Basic authentication password
 ```
+
+## Limitation
+
+We can fetch number of packages with package server limitation.
+For example, maximum package naming is 1000 when uses `nuget.org`.
+(Currently OData paging is not supported.)
 
 ----
 
@@ -64,3 +80,13 @@ I have to have a nice meal today...
 ## License
 
 Apache-v2.
+
+----
+
+## History
+
+* 0.2.:
+  * Supported nuget installer.
+  * Fixed for using anonymous user access.
+* 0.1.0:
+  * Initial public release
