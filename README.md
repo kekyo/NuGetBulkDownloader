@@ -1,6 +1,6 @@
 # NuGetBulkDownloader
 
-[Download net461 binary](https://github.com/kekyo/NuGetBulkDownloader/releases/tag/0.1.0)
+[Download net461 binary](https://github.com/kekyo/NuGetBulkDownloader/releases)
 
 ----
 
@@ -32,6 +32,16 @@ You can change storing base path with a option below.
 
 ## Usage
 
+Install via nuget-cli for:
+
+```bash
+$ dotnet install -g NuGetBulkDownloader
+```
+
+Or download [built binary (net461) directly from here](https://github.com/kekyo/NuGetBulkDownloader/releases). 
+
+Then:
+
 ```bash
 $ nugetbd
 NuGetBulkDownloader 0.2.0
@@ -49,7 +59,7 @@ usage: nugetbd [options] <nuget endpoint url>
 ## Limitation
 
 We can fetch number of packages with package server limitation.
-For example, maximum packages is 1000 when uses `nuget.org`.
+For example, maximum package naming is 1000 when uses `nuget.org`.
 (Currently OData paging is not supported.)
 
 ----
@@ -76,6 +86,7 @@ Apache-v2.
 ## History
 
 * 0.2.:
+  * Supported nuget installer.
   * Fixed for using anonymous user access.
 * 0.1.0:
   * Initial public release
