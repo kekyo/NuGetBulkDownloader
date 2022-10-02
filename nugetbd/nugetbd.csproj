@@ -2,10 +2,11 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFrameworks>net461;net6.0</TargetFrameworks>
+    <TargetFrameworks>net461</TargetFrameworks>
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
     <NoWarn>NU1803</NoWarn>
+    <AssemblyName>nugetbd</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

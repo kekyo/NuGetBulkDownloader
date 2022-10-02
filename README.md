@@ -10,7 +10,7 @@ Useful should to download all nuget packages from a nuget repository.
 You can use for backup many nuget package purpose.
 
 ```bash
-$ NuGetBulkDownloader.exe https://example.com/nuget/v3/index.json
+$ nugetbd https://example.com/nuget/v3/index.json
 NuGetBulkDownloader 0.2.0
 Copyright (c) Kouji Matsui
 https://github.com/kekyo/NuGetBulkDownloader
@@ -33,12 +33,12 @@ You can change storing base path with a option below.
 ## Usage
 
 ```bash
-$ NuGetBulkDownloader.exe
+$ nugetbd
 NuGetBulkDownloader 0.2.0
 Copyright (c) Kouji Matsui
 https://github.com/kekyo/NuGetBulkDownloader
 
-usage: NuGetBulkDownloader [options] <nuget endpoint url>
+usage: nugetbd [options] <nuget endpoint url>
   -i                         Include prerelease packages
   -p                         Perform parallel download
       --basePath=VALUE       Store packages into this directory
