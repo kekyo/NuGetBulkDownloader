@@ -76,10 +76,14 @@ internal sealed class HttpAccessor
             RequestUri = new Uri(url),
         };
 
-        request.Headers.Authorization = new AuthenticationHeaderValue(
-            "Basic",
-            Convert.ToBase64String(
-                Encoding.ASCII.GetBytes($"{this.userName}:{this.password}")));
+        if (this.userName is { } userName &&
+            this.password is { } password)
+        {
+            request.Headers.Authorization = new AuthenticationHeaderValue(
+                "Basic",
+                Convert.ToBase64String(
+                    Encoding.ASCII.GetBytes($"{userName}:{password}")));
+        }
 
         var response = await httpClient.SendAsync(request);
 
