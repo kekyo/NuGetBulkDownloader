@@ -12,5 +12,6 @@ echo.
 rem git clean -xfd
 
 dotnet restore
+dotnet build -p:Configuration=Release -p:Platform=AnyCPU nugetbd\nugetbd.csproj
 dotnet build -p:Configuration=Release -p:Platform=AnyCPU nugetbd-cli\nugetbd-cli.csproj
 dotnet pack -p:Configuration=Release -p:Platform=AnyCPU -o artifacts nugetbd-cli\nugetbd-cli.csproj

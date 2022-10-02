@@ -1,5 +1,7 @@
 # NuGetBulkDownloader
 
+ [![NuGet NuGetBulkDownloader](https://img.shields.io/nuget/v/NuGetBulkDownloader.svg?style=flat)](https://www.nuget.org/packages/NuGetBulkDownloader)
+
 [Download net461 binary](https://github.com/kekyo/NuGetBulkDownloader/releases)
 
 ----
