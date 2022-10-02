@@ -32,17 +32,17 @@ Downloading Epoxy.Avalonia.0.15.0.nupkg ... Done.
 Downloaded files are placed into `packages/{package id}/{package id}.{package version}.nupkg`.
 You can change storing base path with a option below.
 
-## Usage
+## Installation
 
 Install via nuget-cli for:
 
 ```bash
-$ dotnet install -g NuGetBulkDownloader
+$ dotnet tool install -g NuGetBulkDownloader
 ```
 
 Or download [built binary (net461) directly from here](https://github.com/kekyo/NuGetBulkDownloader/releases). 
 
-Then:
+## Usage
 
 ```bash
 $ nugetbd
