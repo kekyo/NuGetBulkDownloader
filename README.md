@@ -10,8 +10,8 @@ Useful should to download all nuget packages from a nuget repository.
 You can use for backup many nuget package purpose.
 
 ```bash
-C:\>NuGetBulkDownloader.exe https://example.com/nuget/v3/index.json
-NuGetBulkDownloader 0.1.0
+$ NuGetBulkDownloader.exe https://example.com/nuget/v3/index.json
+NuGetBulkDownloader 0.2.0
 Copyright (c) Kouji Matsui
 https://github.com/kekyo/NuGetBulkDownloader
 
@@ -33,8 +33,8 @@ You can change storing base path with a option below.
 ## Usage
 
 ```bash
-C:\>NuGetBulkDownloader.exe
-NuGetBulkDownloader 0.1.0
+$ NuGetBulkDownloader.exe
+NuGetBulkDownloader 0.2.0
 Copyright (c) Kouji Matsui
 https://github.com/kekyo/NuGetBulkDownloader
 
@@ -45,6 +45,12 @@ usage: NuGetBulkDownloader [options] <nuget endpoint url>
       --userName=VALUE       Basic authentication user name
       --password=VALUE       Basic authentication password
 ```
+
+## Limitation
+
+We can fetch number of packages with package server limitation.
+For example, maximum packages is 1000 when uses `nuget.org`.
+(Currently OData paging is not supported.)
 
 ----
 
@@ -64,3 +70,12 @@ I have to have a nice meal today...
 ## License
 
 Apache-v2.
+
+----
+
+## History
+
+* 0.2.:
+  * Fixed for using anonymous user access.
+* 0.1.0:
+  * Initial public release
