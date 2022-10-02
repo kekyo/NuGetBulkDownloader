@@ -87,7 +87,7 @@ Apache-v2.
 
 ## History
 
-* 0.2.:
+* 0.2.0:
   * Supported nuget installer.
   * Fixed for using anonymous user access.
 * 0.1.0:
